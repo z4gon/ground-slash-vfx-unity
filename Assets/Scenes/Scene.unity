@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 567743870}
   - component: {fileID: 567743869}
   - component: {fileID: 567743868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 612721575}
   - component: {fileID: 612721574}
   - component: {fileID: 612721573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,6 +784,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 176867831}
+  - {fileID: 1907021111}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -822,7 +823,7 @@ MonoBehaviour:
   RotationSpeed: 6
   SpeedChangeRate: 10
   JumpHeight: 1.2
-  Gravity: -2
+  Gravity: -15
   JumpTimeout: 0.1
   FallTimeout: 0.15
   Grounded: 1
@@ -830,7 +831,7 @@ MonoBehaviour:
   GroundedRadius: 0.5
   GroundLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   CinemachineCameraTarget: {fileID: 176867829}
   TopClamp: 90
   BottomClamp: -90
@@ -850,6 +851,7 @@ MonoBehaviour:
   look: {x: 0, y: 0}
   jump: 0
   sprint: 0
+  shoot: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
@@ -945,7 +947,7 @@ GameObject:
   - component: {fileID: 848686212}
   - component: {fileID: 848686211}
   - component: {fileID: 848686210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1043,7 +1045,7 @@ GameObject:
   - component: {fileID: 1018896261}
   - component: {fileID: 1018896260}
   - component: {fileID: 1018896259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1142,7 @@ GameObject:
   - component: {fileID: 1633325122}
   - component: {fileID: 1633325121}
   - component: {fileID: 1633325124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,7 +1246,7 @@ GameObject:
   - component: {fileID: 1769837898}
   - component: {fileID: 1769837897}
   - component: {fileID: 1769837896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1344,7 @@ GameObject:
   - component: {fileID: 1773432818}
   - component: {fileID: 1773432817}
   - component: {fileID: 1773432816}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1440,7 +1442,7 @@ GameObject:
   - component: {fileID: 1854186438}
   - component: {fileID: 1854186437}
   - component: {fileID: 1854186436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1525,6 +1527,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1854186434}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1907021110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1907021111}
+  - component: {fileID: 1907021112}
+  m_Layer: 0
+  m_Name: Shooter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1907021111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907021110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 772931089}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907021112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907021110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa0a4481425840afb96355f80db276c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile: {fileID: 0}
+  FirePoint: {fileID: 0}
+  _input: {fileID: 0}
+  _playerInput: {fileID: 0}
 --- !u!1 &2121467012
 GameObject:
   m_ObjectHideFlags: 0
