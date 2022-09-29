@@ -5,6 +5,7 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 - [3D Mesh for the Slash](#mesh-for-the-slash)
 - [Ground Decals](#ground-decals)
+- [First Person Character Controller](#first-person-character-controller)
 - [Adjust dynamically to terrain](#adjust-dynamically-to-terrain)
 - [Debris](#debris)
 
@@ -33,6 +34,11 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 ### Decals
 ![Decals](./docs/8-decals.gif)
+
+---
+## First Person Character Controller
+
+![First Person Character Controller](./docs/9-first-person-character-controller.gif)
 
 ---
 
@@ -87,6 +93,9 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
         1. Create two output decals, one black and another orange, to simulate burn.
 
 1. **Programming**
+    1. **First Person Character Controller**
+          1. Integrate the [starter asset](https://assetstore.unity.com/packages/essentials/starter-assets-first-person-character-controller-196525) in your project.
+          1. Add a character controller in the scene.
     1. **Shooter**
         1. Create a component that insantiates a GameObject for the VFX.
         1. Orients the projectile.
