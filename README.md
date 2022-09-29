@@ -3,7 +3,7 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 ## Features
 
-- [Mesh for the Slash](#mesh-for-the-slash)
+- [3D Mesh for the Slash](#mesh-for-the-slash)
 - [Ground Decals](#ground-decals)
 - [Adjust dynamically to terrain](#adjust-dynamically-to-terrain)
 - [Debris](#debris)
@@ -12,6 +12,12 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 
 ---
+
+## 3D Mesh for the Slash
+
+![Model the slash](./docs/1-model-uv-map.gif)
+![UV Maps](./docs/2-uv-maps.gif)
+![Finished model](./docs/3-slash-model.gif)
 
 ---
 
@@ -24,7 +30,11 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 1. **Mesh for the Slash**
    1. Create the Mesh in Blender.
+        1. Start with a Bezier curve, extrude it to create a 3D shape
    1. Map the UVs for the gradient texture.
+        1. Open the UV editor.
+        1. Constrain to Image Bounds.
+        1. Map the UVs to be able to use a simple gradient to cover the shape.
    1. Export as _.fbx_ to include the UVs mapping.
 
 1. **VFX Graph for the Slash**
