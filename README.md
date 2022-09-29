@@ -21,6 +21,7 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 ### VFX Graph for the Slash
 ![Finished model](./docs/4-mesh-output.gif)
+![Gradient and Fade](./docs/5-gradient-fade.gif)
 
 ---
 
