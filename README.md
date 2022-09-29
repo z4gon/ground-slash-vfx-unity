@@ -25,6 +25,14 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 ---
 
+## Ground Decals
+
+### Spawn over distance and leave a trail
+![Spawn over Distance](./docs/6-spawn-over-distance.gif)
+![Trail](./docs/7-spawn-trail.gif)
+
+---
+
 ## Implementation explained
 
 1. **Project configuration**
