@@ -19,6 +19,9 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 ![UV Maps](./docs/2-uv-maps.gif)
 ![Finished model](./docs/3-slash-model.gif)
 
+### VFX Graph for the Slash
+![Finished model](./docs/4-mesh-output.gif)
+
 ---
 
 ## Implementation explained
@@ -40,7 +43,7 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 1. **VFX Graph for the Slash**
    1. Burst of 1 single particle.
    1. We won't make the particle have a velocity, it will just grow in place.
-        > NOTE: We will move the whole VFX and make it spawn other particles as it moves (decals)
+        > NOTE: We will move the whole VFX object and make it spawn other particles as it moves (decals and debris)
    1. Use an **Output Particle Mesh** node.
         1. Set culling mode to _both_, so it renders all sides of the mesh.
         1. Rotate and adjust until the mesh faces the right direction.
