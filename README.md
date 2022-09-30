@@ -51,12 +51,12 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 ---
 
-### Debris
+## Debris
 
-## Blender Model
+### Blender Model
 ![Model Debris](./docs/11-debris-cell-fracture.gif)
 
-## VFX
+### VFX
 ![Spawn Debris](./docs/12-spawn-debris-gravity.gif)
 
 ---
