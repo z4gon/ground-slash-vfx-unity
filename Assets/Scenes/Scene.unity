@@ -766,7 +766,7 @@ PrefabInstance:
     - target: {fileID: 7892500553452983200, guid: a22cd6da6bfd94dfa9b72d597c7dab88,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.75
+      value: 7.13
       objectReference: {fileID: 0}
     - target: {fileID: 7892500553452983200, guid: a22cd6da6bfd94dfa9b72d597c7dab88,
         type: 3}
@@ -815,6 +815,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7892500553452983202, guid: a22cd6da6bfd94dfa9b72d597c7dab88,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892500553452983202, guid: a22cd6da6bfd94dfa9b72d597c7dab88,
+        type: 3}
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
@@ -822,6 +827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GroundSlash
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892500553452983203, guid: a22cd6da6bfd94dfa9b72d597c7dab88,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a22cd6da6bfd94dfa9b72d597c7dab88, type: 3}
