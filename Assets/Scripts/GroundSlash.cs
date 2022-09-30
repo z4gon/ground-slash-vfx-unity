@@ -17,7 +17,7 @@ public class GroundSlash : MonoBehaviour
     private Coroutine _coroutine;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         // snap to the ground by default
         transform.position = new Vector3(
@@ -37,6 +37,11 @@ public class GroundSlash : MonoBehaviour
     void FixedUpdate()
     {
         SnapToFloor();
+    }
+
+    public void Initialize(Transform origin){
+        transform.forward = origin.forward;
+        _rigidbody.velocity = transform.forward * Velocity;
     }
 
     void SnapToFloor(){
