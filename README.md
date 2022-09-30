@@ -11,6 +11,8 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 ## Screenshots
 
+![Adapt to Terrain](./docs/13-finished.gif)
+![Cube Terrain](./docs/14-cube-trail.gif)
 
 ---
 
@@ -46,6 +48,16 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 ## Adjust Dynamically to Terrain
 
 ![Adjust Dynamically to Terrain](./docs/10-ground-shooter-script.gif)
+
+---
+
+### Debris
+
+## Blender Model
+![Model Debris](./docs/11-debris-cell-fracture.gif)
+
+## VFX
+![Spawn Debris](./docs/12-spawn-debris-gravity.gif)
 
 ---
 
@@ -115,7 +127,8 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
     1. Model the meshes of the debris in Blender.
     1. **VFX Graph for the Debris**
         1. Reuse the same system used for the decals, maybe make the decals a sub graph.
-        1. Use an **Output Particle Mesh** node.
+        1. Use an **Output Particle URP Lit Mesh** node.
+            1. This is important, so decals apply to the debris meshes.
             1. Set random colors between a range.
             1. Set random size and rotations.
             1. Set size over life for the debris to shrink and dissapear.
@@ -124,3 +137,4 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
         1. In the **Update Particle** node.
             1. Add gravity to the particles.
             1. Add a colission with plane, to make them stop at the ground.
+        1. Set another particle system to spawn debris at the position of the VFX. To conceal the limitations of the collissions with geometry of the debris.
