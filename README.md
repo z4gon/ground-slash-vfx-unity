@@ -58,6 +58,10 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 
 ### VFX
 ![Spawn Debris](./docs/12-spawn-debris-gravity.gif)
+![Adapt to Terrain](./docs/13-finished.gif)
+
+### VFX Graph
+![VFX Graph](./docs/graphs/vfx-graph.png)
 
 ---
 
