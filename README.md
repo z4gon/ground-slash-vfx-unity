@@ -1,5 +1,5 @@
 # Ground Slash VFX
-A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Shader Graph and some programming. Made in Unity **Unity 2021.3.10f1**
+A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph and some programming. Made in Unity **Unity 2021.3.10f1**
 
 ## Features
 
