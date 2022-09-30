@@ -16,6 +16,6 @@ public class GroundSlashShooter : MonoBehaviour
 
     public void OnShoot(){
         var projectile = Instantiate(Projectile, Origin.position, Quaternion.identity);
-        projectile.Initialize(transform);
+        projectile.Initialize(Origin);
     }
 }

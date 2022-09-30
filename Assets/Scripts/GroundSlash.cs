@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.VFX;
 
 [RequireComponent(typeof(Rigidbody))]
 public class GroundSlash : MonoBehaviour
@@ -12,6 +12,7 @@ public class GroundSlash : MonoBehaviour
 
 
     private Rigidbody _rigidbody;
+    private VisualEffect _visualEffect;
     private bool _isStopped;
 
     private Coroutine _coroutine;
@@ -23,13 +24,15 @@ public class GroundSlash : MonoBehaviour
         transform.position = new Vector3(
             transform.position.x,
             0f,
-            transform.position.y
+            transform.position.z
         );
 
         _rigidbody = GetComponent<Rigidbody>();
         if(_rigidbody != null){
             _coroutine = StartCoroutine(SlowDown());
         }
+
+        _visualEffect = GetComponent<VisualEffect>();
 
         Destroy(gameObject, DestroyAfterSeconds);
     }
