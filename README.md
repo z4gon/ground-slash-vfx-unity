@@ -6,7 +6,7 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 - [3D Mesh for the Slash](#mesh-for-the-slash)
 - [Ground Decals](#ground-decals)
 - [First Person Character Controller](#first-person-character-controller)
-- [Adjust dynamically to terrain](#adjust-dynamically-to-terrain)
+- [Adjust Dynamically to Terrain](#adjust-dynamically-to-terrain)
 - [Debris](#debris)
 
 ## Screenshots
@@ -36,9 +36,16 @@ A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph, Sh
 ![Decals](./docs/8-decals.gif)
 
 ---
+
 ## First Person Character Controller
 
 ![First Person Character Controller](./docs/9-first-person-character-controller.gif)
+
+---
+
+## Adjust Dynamically to Terrain
+
+![Adjust Dynamically to Terrain](./docs/10-ground-shooter-script.gif)
 
 ---
 

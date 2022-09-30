@@ -6,8 +6,8 @@ using UnityEngine;
 public class GroundSlash : MonoBehaviour
 {
     public float Velocity = 20f;
-    public float SlowDownRate = 0.01f;
-    public float GroundDetectingDistance = 0.1f;
+    public float SlowDownRate = 0.1f;
+    public float GroundDetectingDistance = 6f;
     public float DestroyAfterSeconds = 5f;
 
 
@@ -40,6 +40,7 @@ public class GroundSlash : MonoBehaviour
     }
 
     public void Initialize(Transform origin){
+        transform.position = origin.position;
         transform.forward = origin.forward;
         _rigidbody.velocity = transform.forward * Velocity;
     }
@@ -48,9 +49,11 @@ public class GroundSlash : MonoBehaviour
         if(!_isStopped){
             RaycastHit hit;
 
+            var rayOrigin = transform.position + (Vector3.up * (GroundDetectingDistance / 2));
+
             var didHitFloor = Physics.Raycast(
-                origin: transform.position + Vector3.up,
-                direction: transform.TransformDirection(Vector3.down),
+                origin: transform.position + (Vector3.up * 3),
+                direction: transform.up * -1,
                 hitInfo: out hit,
                 maxDistance: GroundDetectingDistance
             );
@@ -58,15 +61,17 @@ public class GroundSlash : MonoBehaviour
             transform.position = new Vector3(
                 transform.position.x,
                 didHitFloor ? hit.point.y : 0,
-                transform.position.y
+                transform.position.z
             );
+
+            Debug.DrawRay(start: rayOrigin, dir: transform.up * -1 * GroundDetectingDistance, Color.red);
         }
     }
 
     IEnumerator SlowDown(){
         float t = 1;
         while (t > 0){
-            _rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, Vector3.zero, t);
+            _rigidbody.velocity = Vector3.Lerp(Vector3.zero, _rigidbody.velocity, t);
             t -= SlowDownRate;
             yield return new WaitForSeconds(0.1f);
         }

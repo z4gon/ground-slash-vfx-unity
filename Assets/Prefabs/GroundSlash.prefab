@@ -141,6 +141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Velocity: 20
-  SlowDownRate: 0.01
-  GroundDetectingDistance: 0.1
+  SlowDownRate: 0.08
+  GroundDetectingDistance: 6
   DestroyAfterSeconds: 5
