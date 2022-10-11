@@ -2,6 +2,10 @@
 
 A ground slash attack vfx implemented with a Mesh, decal textures, VFX Graph and some programming. Made in Unity **Unity 2021.3.10f1**
 
+### Reference Tutorial
+
+- [Ground Spash VFX by Gabriel Aguiar](https://www.youtube.com/watch?v=qh3TEYUN6cA)
+
 ## Features
 
 - [3D Mesh for the Slash](#mesh-for-the-slash)
